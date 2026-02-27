@@ -1,0 +1,5 @@
+{
+  "name": "3dokas.live",
+  "description": "Convert 2D images into high-fidelity 3D models for printing, gaming, and AR visualization.",
+  "requestFramePermissions": []
+}
