@@ -65,17 +65,8 @@ const AuthPage: React.FC<Props> = ({ onLogin, onBack }) => {
       <div className="w-full lg:w-1/2 flex flex-col p-8 md:p-16 justify-center items-center overflow-y-auto">
         <div className="w-full max-w-md space-y-8">
           <div className="flex items-center gap-2 text-primary cursor-pointer mb-12" onClick={onBack}>
-            <div className="size-10">
-              <svg className="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style={{ stopColor: "#5b2bee", stopOpacity: 1 }} />
-                    <stop offset="100%" style={{ stopColor: "#a855f7", stopOpacity: 1 }} />
-                  </linearGradient>
-                </defs>
-                <path d="M50 5 L90 25 L90 75 L50 95 L10 75 L10 25 Z" fill="url(#grad3)" stroke="#151022" strokeWidth="2" />
-                <path d="M50 5 L50 45 L90 25 M50 45 L10 25 M50 45 L50 95" stroke="#white" strokeWidth="4" strokeLinecap="round" />
-              </svg>
+            <div className="size-10 overflow-hidden rounded-xl">
+              <img src="/logo.png" alt="3dokas.live Logo" className="w-full h-full object-cover" />
             </div>
             <span className="text-2xl font-bold text-white">3dokas.live</span>
           </div>
