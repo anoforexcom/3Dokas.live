@@ -31,17 +31,8 @@ const Sidebar: React.FC<SidebarProps> = ({ user, current, onNavigate, logout }) 
     <aside className="w-72 hidden lg:flex flex-col bg-background-dark border-r border-border-dark p-8 justify-between shrink-0">
       <div className="space-y-12">
         <div className="flex items-center gap-3 text-primary group cursor-pointer" onClick={() => onNavigate(isAdmin ? 'ADMIN' : 'DASHBOARD')}>
-          <div className="size-10">
-            <svg className="w-full h-full" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-              <defs>
-                <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
-                  <stop offset="0%" style={{ stopColor: "#5b2bee", stopOpacity: 1 }} />
-                  <stop offset="100%" style={{ stopColor: "#a855f7", stopOpacity: 1 }} />
-                </linearGradient>
-              </defs>
-              <path d="M50 5 L90 25 L90 75 L50 95 L10 75 L10 25 Z" fill="url(#grad4)" stroke="#151022" strokeWidth="2" />
-              <path d="M50 5 L50 45 L90 25 M50 45 L10 25 M50 45 L50 95" stroke="#white" strokeWidth="4" strokeLinecap="round" />
-            </svg>
+          <div className="size-10 overflow-hidden rounded-xl">
+            <img src="/logo.png" alt="3dokas.live Logo" className="w-full h-full object-cover" />
           </div>
           <span className="text-2xl font-black text-white tracking-tighter">3dokas.live</span>
         </div>
