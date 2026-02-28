@@ -5,8 +5,6 @@ import Sidebar from '../components/Sidebar';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 import { useSales } from '../context/SalesContext';
 import { useTransformations } from '../context/TransformationContext';
-import { useSales } from '../context/SalesContext';
-import { useTransformations } from '../context/TransformationContext';
 
 interface Props {
    user: User;
